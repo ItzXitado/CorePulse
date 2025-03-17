@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\KaustieLord\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.11.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\KaustieLord\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgJeremyAnsel_HLSL_Targets Condition=" '$(PkgJeremyAnsel_HLSL_Targets)' == '' ">C:\Users\KaustieLord\.nuget\packages\jeremyansel.hlsl.targets\1.0.13</PkgJeremyAnsel_HLSL_Targets>
+    <PkgHandyControls Condition=" '$(PkgHandyControls)' == '' ">C:\Users\KaustieLord\.nuget\packages\handycontrols\3.5.3</PkgHandyControls>
+    <PkgHandyControl Condition=" '$(PkgHandyControl)' == '' ">C:\Users\KaustieLord\.nuget\packages\handycontrol\3.5.1</PkgHandyControl>
+  </PropertyGroup>
+</Project>

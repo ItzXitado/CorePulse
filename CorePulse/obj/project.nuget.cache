@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "v8s5LM/EYOA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\itzde\\Desktop\\CorePulse\\CorePulse\\CorePulse.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\itzde\\.nuget\\packages\\emoji.wpf\\0.3.4\\emoji.wpf.0.3.4.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\fluentwpf\\0.10.2\\fluentwpf.0.10.2.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\handycontrol\\3.5.1\\handycontrol.3.5.1.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\handycontrols\\3.5.3\\handycontrols.3.5.3.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\hidsharp\\2.1.0\\hidsharp.2.1.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\jeremyansel.hlsl.targets\\1.0.13\\jeremyansel.hlsl.targets.1.0.13.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\librehardwaremonitorlib\\0.9.3\\librehardwaremonitorlib.0.9.3.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\mono.posix.netstandard\\1.0.0\\mono.posix.netstandard.1.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\8.0.0\\runtime.linux-x64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\runtime.native.system.io.ports\\8.0.0\\runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\8.0.0\\runtime.osx-x64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\simplefactorygenerator\\0.8.0\\simplefactorygenerator.0.8.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\stfu\\0.1.1\\stfu.0.1.1.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\system.io.ports\\8.0.0\\system.io.ports.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\itzde\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

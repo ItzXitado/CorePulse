@@ -1,0 +1,82 @@
+﻿<Window x:Class="CorePulse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+        xmlns:handy="http://schemas.handyorg.com/wpf"
+        xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CorePulse"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        fw:AcrylicWindow.Enabled="True"
+        fw:AcrylicWindow.AcrylicAccentState="BlurBehind"
+        WindowStyle="None"
+        Background="Transparent"
+        
+        
+        Title="CorePulse Desktop" Height="460" Width="1050" MinWidth="1050" MinHeight="460" Initialized="Window_Initialized">
+    <Grid Width="1050" Height="460">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border x:Name="GPUGlobalUsage" BorderBrush="Black" Margin="10,120,384,40" Background="#FF282828" CornerRadius="12,12,12,12" Opacity="0.5">
+            <hc:CircleProgressBar x:Name="gpuTemperature_Circle" Margin="57,57,399,43" Foreground="#FF8500FF" Text="" ArcThickness="20" ShowText="False" Width="200" Height="200" ToolTip="GPU Temperature" Maximum="85"/>
+        
+        </Border>
+        <Border x:Name="GPUGlobalUsage_Copy" BorderBrush="Black" Margin="671,120,10,40" Background="#FF282828" CornerRadius="12,12,12,12" Opacity="0.5">
+            <hc:CircleProgressBar Width="200" ToolTip="GPU Temperature" Text="" ShowText="False" x:Name="cpuTemperature_Circle" Margin="84,50,85,50" Height="200" Foreground="#FF8500FF" ArcThickness="20" Maximum="85" Value="-2"/>
+        </Border>
+        <Border BorderThickness="1" Background="#FF202020" CornerRadius="128,128,128,128" Margin="80,190,795,95" Width="175" Height="175">
+            <Label x:Name="gpuTemperature_txt" Content="90ºC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" FontWeight="Bold" FontSize="24" Margin="0,60,0,85" Padding="10,0,10,0"/>
+        </Border>
+        <Label Content="GPU Temp (ºC)" HorizontalAlignment="Left" Margin="111,267,0,0" VerticalAlignment="Top" Foreground="#FFC1C1C1" FontSize="14" Height="38"/>
+        <Label Content="GPU Sensor Calculations" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ProgressBar x:Name="gpuFanSpeed" HorizontalAlignment="Left" Height="15" Margin="338,357,0,0" VerticalAlignment="Top" Width="300" Value="95" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1" Maximum="3500"/>
+        <Label Content="Fan Speed" HorizontalAlignment="Left" Margin="338,312,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" FontSize="20" Padding="0,0,0,0"/>
+        <Label Content="Set maximum value to 3500 RPM" HorizontalAlignment="Left" Margin="328,330,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="#FF969696"/>
+        <Label x:Name="gpuName_txt" Content="NVIDIA RTX 5090 Ti" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold" FontSize="16" Margin="328,121,0,0" VerticalAlignment="Top" Height="44" Width="338" HorizontalContentAlignment="Left"/>
+        <Label Content="CPU Total Core Temperatures" HorizontalAlignment="Left" Margin="671,121,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Border BorderThickness="1" Background="#FF202020" CornerRadius="128,128,128,128" Margin="768,183,107,102" Width="175" Height="175">
+            <Label x:Name="cpuTemperature_txt" Content="90ºC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" FontWeight="Bold" FontSize="24" Margin="0,65,0,80" Padding="10,0,10,0"/>
+        </Border>
+        <Label Content="CPU Temp (ºC)" HorizontalAlignment="Left" Margin="799,268,0,0" VerticalAlignment="Top" Foreground="#FFC1C1C1" FontSize="14" Height="32"/>
+        <ProgressBar x:Name="gpuPowerConsumption" HorizontalAlignment="Left" Height="15" Margin="338,293,0,0" VerticalAlignment="Top" Width="300" Value="20" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1" Maximum="300"/>
+        <Label Content="GPU Power Consumption" HorizontalAlignment="Left" Margin="338,249,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" FontSize="20" Padding="0,0,0,0"/>
+        <Label Content="Energy used by your graphics card" HorizontalAlignment="Left" Margin="328,267,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="#FF969696"/>
+        <ProgressBar x:Name="vRAM" HorizontalAlignment="Left" Height="16" Margin="338,230,0,0" VerticalAlignment="Top" Width="300" Value="49" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1" Maximum="2999"/>
+        <Label Content="VRAM" HorizontalAlignment="Left" Margin="338,183,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" FontSize="20" Padding="0,0,0,0"/>
+        <Label Content="Memory utilized by your GPU" HorizontalAlignment="Left" Margin="328,201,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="#FF969696"/>
+        <Border x:Name="GPUGlobalUsage_Copy4" BorderBrush="Black" Margin="790,20,10,358" Background="#FF282828" CornerRadius="12,12,12,12" Opacity="0.5"/>
+        <Border x:Name="GPUGlobalUsage_Copy1" BorderBrush="Black" Margin="529,20,271,358" Background="#FF282828" CornerRadius="12,12,12,12" Opacity="0.5"/>
+        <Border x:Name="GPUGlobalUsage_Copy2" BorderBrush="Black" Margin="269,20,531,358" Background="#FF282828" CornerRadius="12,12,12,12" Opacity="0.5"/>
+        <Border x:Name="GPUGlobalUsage_Copy3" BorderBrush="Black" Margin="10,20,790,358" Background="#FF282828" CornerRadius="12,12,12,12" Opacity="0.5"/>
+        <Border x:Name="GPUGlobalUsage_Copy6" BorderBrush="Black" Background="#FF8500FF" CornerRadius="128,128,128,128" Margin="25,36,973,374">
+            <Image Source="/Processor.png" Margin="10,10,10,10"/>
+        </Border>
+        <Border x:Name="GPUGlobalUsage_Copy5" BorderBrush="Black" Background="#FF8500FF" CornerRadius="128,128,128,128" Margin="280,36,718,374">
+            <Image Source="/Video Card.png" Margin="10,10,10,10"/>
+        </Border>
+        <Border x:Name="GPUGlobalUsage_Copy7" BorderBrush="Black" Background="#FF8500FF" CornerRadius="128,128,128,128" Margin="538,36,460,374">
+            <Image Source="/Memory Slot.png" Margin="10,10,10,10"/>
+        </Border>
+        <Border x:Name="GPUGlobalUsage_Copy8" BorderBrush="Black" Background="#FF8500FF" CornerRadius="128,128,128,128" Margin="801,36,197,374">
+            <Image Source="/Workstation.png" Margin="10,10,10,10"/>
+        </Border>
+        <Label x:Name="cpuUsage_txt" Content="Loading" HorizontalAlignment="Left" Margin="76,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Height="35" Width="110" HorizontalContentAlignment="Left"/>
+        <Label x:Name="cpu_Usage_txt_Copy" Content="CPU" HorizontalAlignment="Left" Margin="77,53,0,0" VerticalAlignment="Top" Foreground="#FFA0A0A0" Height="34" Width="110" HorizontalContentAlignment="Left" FontSize="11"/>
+        <Label x:Name="gpu_usage_txt" Content="Loading" HorizontalAlignment="Left" Margin="331,38,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Height="36" Width="110" HorizontalContentAlignment="Left"/>
+        <Label x:Name="cpu_Usage_txt_Copy2" Content="GPU" HorizontalAlignment="Left" Margin="332,54,0,0" VerticalAlignment="Top" Foreground="#FFA0A0A0" Height="34" Width="110" HorizontalContentAlignment="Left" FontSize="11"/>
+        <Label x:Name="ram_usage_txt" Content="Loading" HorizontalAlignment="Left" Margin="586,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Height="35" Width="110" HorizontalContentAlignment="Left"/>
+        <Label x:Name="cpu_Usage_txt_Copy4" Content="RAM" HorizontalAlignment="Left" Margin="586,53,0,0" VerticalAlignment="Top" Foreground="#FFA0A0A0" Height="34" Width="110" HorizontalContentAlignment="Left" FontSize="11"/>
+        <Label x:Name="global_usage_txt" Content="Loading" HorizontalAlignment="Left" Margin="848,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Height="35" Width="110" HorizontalContentAlignment="Left"/>
+        <Label x:Name="cpu_Usage_txt_Copy6" Content="GLOBAL USAGE" HorizontalAlignment="Left" Margin="848,53,0,0" VerticalAlignment="Top" Foreground="#FFA0A0A0" Height="34" Width="110" HorizontalContentAlignment="Left" FontSize="11"/>
+        <ProgressBar x:Name="cpuUsage_bar" HorizontalAlignment="Left" Height="7" Margin="17,95,0,0" VerticalAlignment="Top" Width="236" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1"/>
+        <ProgressBar x:Name="gpuUsage_bar" HorizontalAlignment="Left" Height="7" Margin="277,95,0,0" VerticalAlignment="Top" Width="236" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1"/>
+        <ProgressBar x:Name="ramUsage_bar" HorizontalAlignment="Left" Height="7" Margin="538,95,0,0" VerticalAlignment="Top" Width="236" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1"/>
+        <ProgressBar x:Name="globalUsage_bar" HorizontalAlignment="Left" Height="7" Margin="797,95,0,0" VerticalAlignment="Top" Width="236" Background="#FF202020" Foreground="#FF8500FF" FontSize="0.1"/>
+    </Grid>
+</Window>
